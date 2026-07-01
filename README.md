@@ -1,6 +1,8 @@
 # Quick Cognition v2
 
-> 对具体技术/概念建立有事实溯源的认知地图。
+> ⚠️ **半成品**——核心机制已可用，报告质量仍在迭代中。欢迎 Issue 讨论。
+
+对具体技术/概念建立有事实溯源的认知地图。
 
 输入一个具体技术/概念/工具/方法/算法/协议/框架/模型，输出一份 HTML 报告，包含 4 维结构（历史/结构/功能/本质）+ 横纵交汇 + 回到本质。
 
@@ -37,17 +39,17 @@ Claude 会自动：
 ### 方式 1：从 GitHub 安装（推荐）
 
 ```bash
-claude plugin install https://github.com/<你的用户名>/quick-cognition-v2
+claude plugin install https://github.com/Foggy-1iu/quickCG
 ```
 
 ### 方式 2：从 .skill 包安装
 
-1. 下载最新 [Release](https://github.com/<你的用户名>/quick-cognition-v2/releases) 的 `.skill` 文件
+1. 下载最新 [Release](https://github.com/Foggy-1iu/quickCG/releases) 的 `.skill` 文件
 2. 解压到 Claude Code skills 目录：
 
 ```bash
 # Windows 全局
-Expand-Archive -Path "quick-cognition-v2.skill" -DestinationPath "C:\Users\<你的用户名>\.claude\skills\quick-cognition-v2" -Force
+Expand-Archive -Path "quick-cognition-v2.skill" -DestinationPath "C:\Users\Liu\.claude\skills\quick-cognition-v2" -Force
 
 # Mac/Linux 全局
 mkdir -p ~/.claude/skills/quick-cognition-v2
@@ -57,7 +59,7 @@ unzip quick-cognition-v2.skill -d ~/.claude/skills/quick-cognition-v2
 ## 🏗️ 项目结构
 
 ```
-quick-cognition-v2/
+quickCG/
 ├── SKILL.md            # 路由器（Claude 加载入口）
 ├── README.md           # 本文件（GitHub 主页）
 ├── DEVELOPER.md        # 开发者文档（迭代历史、设计原则）
