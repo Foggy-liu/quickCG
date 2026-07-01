@@ -25,3 +25,6 @@ reports/
 # Temporary
 *.tmp
 *.bak
+
+# Claude Code local config (skills, agents, etc.)
+.claude/
