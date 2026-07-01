@@ -39,12 +39,12 @@ Claude 会自动：
 ### 方式 1：从 GitHub 安装（推荐）
 
 ```bash
-claude plugin install https://github.com/liu/quickCG
+claude plugin install https://github.com/Foggy-liu/quickCG
 ```
 
 ### 方式 2：从 .skill 包安装
 
-1. 下载最新 [Release](https://github.com/liu/quickCG/releases) 的 `.skill` 文件
+1. 下载最新 [Release](https://github.com/Foggy-liu/quickCG/releases) 的 `.skill` 文件
 2. 解压到 Claude Code skills 目录：
 
 ```bash
