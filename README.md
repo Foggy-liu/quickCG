@@ -12,9 +12,8 @@
 |--------|----------|
 | 想深入了解一个具体技术（如 Docker、Transformer、RAG）| 简单查询（"X 是什么"）→ 直接问 |
 | 想深入理解一个抽象概念（如 自由、爱、熵、正义、美）|  |
-| 想对比多个相似事物（如 PostgreSQL vs MySQL、Vue vs React）|  |
 
-> 💡 本 skill 的目标是**能认识任何事物**——具体技术用 4 维结构，抽象概念自动路由到 essay 模式生成散文认知，对比研究走多维对照分析。
+> 💡 本 skill 的目标是**能认识任何事物**——具体技术用 4 维结构（已验证），抽象概念路由到 essay 模式（roadmap 中）。各 mode 内置"同类对比"维度，但**不**支持 A vs B 形式的多事物并列对比。
 
 ## 🚀 快速开始
 
@@ -129,10 +128,9 @@ MIT — 详见 [LICENSE](LICENSE) 文件。
 
 ## 🙏 灵感来源
 
-本 skill 在设计时**深度借鉴**了以下项目，感谢老师的参考和启发：
+本 skill 在设计时参考了以下项目，感谢老师的启发：
 
 - **[quick-cognition（v1，原版）](https://github.com/)** — 单 SKILL.md 版本，本 skill 是其模块化重构（按事物类型分发到专属 mode）
-- **[hv-analysis](https://github.com/)** — 多事物对比研究，启发了本 skill 的多维对照分析维度
-- **[khazix-writer](https://github.com/)** — 散文写作，启发了本 skill 抽象概念模式的 essay 风格
+- **[hv-analysis](https://github.com/)** — 多事物对比研究的思路，启发了本 skill 内的"同类对比"维度（不是 A vs B 并列对比）
 
-如果你熟悉这些 skill，会发现本 skill 吸收了它们的设计精华，但走的是**单一入口、按类型分发**的路线——一套 skill 覆盖所有事物类型，而不是按类型切分多个 skill。
+> ⚠️ 这两个 skill 与本 skill **没有代码层面的依赖关系**，只是设计思路上的参考。如果你熟悉它们，会发现本 skill 走的是"**单一入口、按类型分发**"的路线——一套 skill 覆盖多种事物类型，而不是按类型切分多个 skill。
