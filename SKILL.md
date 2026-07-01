@@ -43,12 +43,14 @@ quick-cognition v2 不是"一个 skill 处理所有事物"，而是"一个路由
   - 无组成结构
   - 评价因人而异
 - 例子：自由、爱、熵、正义、美、真、善
-- → **抽象概念引导**：加载 [`modes/abstract.md`](modes/abstract.md)
-- ⚠️ **不**在 quick-cognition 内部实现——只引导到 khazix-writer
+- → **抽象概念模式**（essay 模式）：加载 [`modes/abstract.md`](modes/abstract.md)
+- ⏳ **当前状态**：abstract.md 仍在迭代中（roadmap），目前对抽象概念的认知质量有限
 
 ### 5. 它是具体技术 / 概念 / 方法 / 工具 / 算法 / 协议 / 框架 / 模型吗？
 - 例子：agent、RAG、Transformer、ReAct、MCP、ChromaDB、Function Calling、Self-Correction、LangChain、bge-large
-- → **概念/技术模式**：加载 [`modes/concept.md`](modes/concept.md) — **默认模式**
+- → **概念/技术模式**：加载 [`modes/concept.md`](modes/concept.md) — **默认模式**（✅ **目前唯一完整可用的模式**）
+
+> ⚠️ **半成品说明**：本 skill 目前仅 concept 模式经过真实概念验证（RAG/Docker）。event/person/abstract 模式文件存在但规则未跟上 v2.4 双层卡机制，使用时可能产生质量不稳定。
 
 ---
 
@@ -280,23 +282,17 @@ navigate_page → file:///{绝对路径} → take_screenshot
 
 ---
 
-## 与其他 Skill 的关系
+## 灵感来源与致敬
 
-| Skill | 关系 | 说明 |
-|-------|------|------|
-| **quick-cognition（v1，原版）** | 父版本 | 本版本从原版拆分重构而来，**不替代**原版，原版保留作为对照 |
-| **hv-analysis** | 互补 | quick-cognition 做"单点认知"，hv-analysis 做"对比研究" |
-| **khazix-writer** | 互补 | 抽象概念引导到 khazix-writer 写散文，不在 quick-cognition 内部实现 |
+本 skill 在设计时**深度借鉴**了以下项目，**感谢老师的参考和启发**：
 
-**与 hv-analysis 的核心区别**：
+| 来源 | 借鉴点 |
+|------|--------|
+| **quick-cognition（v1，原版）** | 本版本从原版拆分重构而来——原版保留作为对照 |
+| **hv-analysis** | 多事物对比研究的维度设计（横向 + 纵向）启发了本 skill 的对比思路 |
+| **khazix-writer** | 散文写作风格启发了本 skill 抽象概念模式的 essay 模式 |
 
-| 维度 | quick-cognition v2 | hv-analysis |
-|------|-------------------|-------------|
-| 输入 | 1 个事物 | 2+ 个事物 |
-| 目的 | 建立认知地图 | 支持决策 |
-| 结构 | 4 维（按 mode 调整）| 横向 + 纵向（固定）|
-| 风格 | 叙事驱动 | 对标驱动 |
-| 适用 | 80% 场景（具体知识点）| 20% 场景（对比研究）|
+**设计路线**：本 skill 走的是"**单一入口、按类型分发**"——一套 skill 覆盖所有事物类型（具体技术/抽象概念/对比研究），而不是按类型切分成多个 skill。这是为了让用户能用一个触发词（如"帮我认知一下 XX"）覆盖尽可能多的认知场景。
 
 ---
 
